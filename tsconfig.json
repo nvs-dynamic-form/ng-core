@@ -9,6 +9,11 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
+    "paths": {
+      "ng-dynamic-form": [
+        "./dist/ng-dynamic-form"
+      ]
+    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
