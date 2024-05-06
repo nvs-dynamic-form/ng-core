@@ -1,0 +1,33 @@
+<form
+  [formGroup]="formGroup"
+  [class]="['df-container-fluid', fromClass]"
+  (ngSubmit)="onSubmitForm()"
+>
+  <div class="df-row">
+    @for (field of fields; track field.key) {
+      <div [class]="this.createFieldItemClass(field.screenSize!)">
+        <ng-container
+          *ngComponentOutlet="
+            formFieldComponents[field.controlType!].component;
+            inputs: {
+              fieldOptions: field,
+              formControl: formGroup.controls[field.key]
+            }
+          "
+        ></ng-container>
+      </div>
+    }
+  </div>
+  @if (submitButtonVisible) {
+    <div class="df-row">
+      <div
+        [class]="['df-col-12', 'df__button', submitButtonPosition]"
+        [class.full]="submitButtonIsFullWidth"
+      >
+        <ng-container
+          *ngComponentOutlet="submitButton!.component"
+        ></ng-container>
+      </div>
+    </div>
+  }
+</form>

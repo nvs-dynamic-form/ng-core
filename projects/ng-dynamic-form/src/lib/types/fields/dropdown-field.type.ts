@@ -8,11 +8,11 @@ export class DropdownField<ValueType> extends FieldBase<ValueType> {
   }>;
 
   onSelectionChange?:
-    | ((selectedValue: ValueType) => void)
-    | ((selectedValue: ValueType) => Promise<void>);
+    | ((event: Event) => void)
+    | ((event: Event) => Promise<void>);
 
   constructor(options: DropdownField<ValueType>) {
-    super(options);
+    super(options, undefined);
     this.options = options.options ?? [];
   }
 }

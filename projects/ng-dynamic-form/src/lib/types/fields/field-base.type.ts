@@ -15,17 +15,19 @@ export abstract class FieldBase<ValueType> {
   defaultValue?: ValueType;
   controlType?: TControlTypes;
   placeholder?: string;
-  type?: 'email' | 'number' | 'password' | 'tel' | 'text' | 'url';
   screenSize?: ScreenSizeType | IScreenSize;
   customErrorMessages?: Array<{ key: string; message: string }>;
   validators?: Array<ValidatorFn>;
+  onFocus?:
+    | ((event: FocusEvent) => void)
+    | ((event: FocusEvent) => Promise<void>);
+  onChange?: ((event: Event) => void) | ((event: Event) => Promise<void>);
 
-  constructor(options: FieldBase<ValueType>) {
-    this.defaultValue = options.defaultValue;
+  constructor(options: FieldBase<ValueType>, defaultValue?: ValueType) {
+    this.defaultValue = options.defaultValue ?? defaultValue;
     this.key = options.key;
     this.label = options.label;
     this.placeholder = options.placeholder ?? '';
-    this.type = options.type ?? 'text';
     this.screenSize = options.screenSize ?? 12;
     this.customErrorMessages = options.customErrorMessages ?? [];
     this.validators = options.validators ?? [];

@@ -1,0 +1,52 @@
+@import "./styles/grid.scss";
+
+:host ::ng-deep {
+  .df {
+    &__item {
+      > :first-child {
+        width: 100%;
+        display: inline-flex;
+      }
+    }
+
+    &__button {
+      > :first-child {
+        width: 250px;
+      }
+
+      &.full {
+        > :first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.df {
+  &__item {
+    :host ::ng-deep {
+      > :first-child {
+        width: 100%;
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    margin-top: 8px;
+
+    &.left {
+      justify-content: start;
+    }
+
+    &.right {
+      justify-content: end;
+    }
+
+    &.center {
+      justify-content: center;
+    }
+  }
+}

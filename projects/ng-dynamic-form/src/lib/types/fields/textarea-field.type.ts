@@ -6,7 +6,7 @@ export class TextareaField extends FieldBase<string> {
   maxRowSize?: number;
 
   constructor(options: TextareaField) {
-    super(options);
+    super(options, '');
     this.minRowSize = options.minRowSize ?? 3;
     this.maxRowSize = options.maxRowSize ?? 10;
   }
