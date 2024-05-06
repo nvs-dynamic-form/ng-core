@@ -2,18 +2,11 @@ import { IScreenSize, ScreenSizeType } from '../screen-size.type';
 
 import { ValidatorFn } from '@angular/forms';
 
-export type TControlTypes =
-  | 'textbox'
-  | 'dropdown'
-  | 'checkbox'
-  | 'textarea'
-  | 'chips';
-
 export abstract class FieldBase<ValueType> {
   key: string;
   label: string;
   defaultValue?: ValueType;
-  controlType?: TControlTypes;
+  controlType?: string;
   placeholder?: string;
   screenSize?: ScreenSizeType | IScreenSize;
   customErrorMessages?: Array<{ key: string; message: string }>;
