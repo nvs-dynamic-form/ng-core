@@ -1,7 +1,7 @@
 .input-component {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: calc(100% - 8px);
 
   > input {
     width: 100%;

@@ -24,15 +24,6 @@
 }
 
 .df {
-  &__item {
-    :host ::ng-deep {
-      > :first-child {
-        width: 100%;
-        display: inline-flex;
-      }
-    }
-  }
-
   &__button {
     display: flex;
     margin-top: 8px;
