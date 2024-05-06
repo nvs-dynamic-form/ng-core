@@ -16,7 +16,7 @@ import { FormFieldComponents } from './types/field-components.type';
 @Component({
   selector: 'ng-dynamic-form',
   templateUrl: './ng-dynamic-form.component.html',
-  styleUrl: './ng-dynamic-form.component.scss',
+  styleUrls: ['./styles/grid.scss', './ng-dynamic-form.component.scss'],
 })
 export class NgDynamicFormComponent implements OnInit, OnChanges {
   protected formGroup!: FormGroup;
