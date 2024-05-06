@@ -6,8 +6,33 @@
     "@angular/core": "^17.3.0",
     "@angular/forms": "^17.3.7"
   },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "typed reactive forms",
+    "reactive-forms",
+    "typed forms",
+    "reactive forms",
+    "angular reactive forms",
+    "angular dynamic form"
+  ],
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "author": {
+    "name": "İsmet Kizgin"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/ismetkizgin/ng-dynamic-form/issues"
+  },
+  "homepage": "https://github.com/ismetkizgin/ng-dynamic-form#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ismetkizgin/ng-dynamic-form"
+  },
+  "license": "MIT",
   "sideEffects": false
 }
