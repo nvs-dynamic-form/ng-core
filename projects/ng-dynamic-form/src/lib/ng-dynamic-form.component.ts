@@ -1,11 +1,5 @@
 import { AbstractControlOptions, FormControl, FormGroup } from '@angular/forms';
-import {
-  ChipsField,
-  IScreenSize,
-  ScreenSizeType,
-  SubmitButton,
-  SubmitButtonOptions,
-} from './types';
+import { ChipsField, IScreenSize, ScreenSizeType, SubmitButton } from './types';
 import {
   Component,
   EventEmitter,
