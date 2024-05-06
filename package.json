@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve simple-example",
-    "build": "ng build",
+    "build": "ng build ng-dynamic-form",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
