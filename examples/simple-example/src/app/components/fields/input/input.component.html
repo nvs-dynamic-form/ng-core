@@ -1,0 +1,14 @@
+<div class="input-component">
+  <input
+    [formControl]="formControl"
+    [type]="fieldOptions.type"
+    [id]="fieldOptions.key"
+    [name]="fieldOptions.key"
+    [placeholder]="fieldOptions.placeholder"
+    (change)="fieldOptions.onChange && fieldOptions.onChange($event)"
+  />
+
+  @if (formControl.touched && formControl.hasError("required")) {
+    <span>{{ fieldOptions.label + " is required" }}</span>
+  }
+</div>
