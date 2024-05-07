@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve simple-example",
-    "build": "ng build ng-dynamic-form",
+    "build": "ng build ng-dynamic-form && cp README.md ./dist/ng-dynamic-form",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "release": "standard-version",
+    "publish": "npm run build && npm publish dist/ng-dynamic-form/"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +37,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^17.3.0",
     "prettier": "^3.2.5",
+    "standard-version": "^9.5.0",
     "typescript": "~5.4.2"
   }
 }
