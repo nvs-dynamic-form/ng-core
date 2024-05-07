@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgDynoform } from './ng-dynoform.component';
+import { NgReactiveFormBuilder } from './ng-reactive-form-builder.component';
 
-describe('NgDynoform', () => {
-  let component: NgDynoform;
-  let fixture: ComponentFixture<NgDynoform>;
+describe('NgReactiveFormBuilder', () => {
+  let component: NgReactiveFormBuilder;
+  let fixture: ComponentFixture<NgReactiveFormBuilder>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NgDynoform],
+      imports: [NgReactiveFormBuilder],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(NgDynoform);
+    fixture = TestBed.createComponent(NgReactiveFormBuilder);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,14 +1,14 @@
 {
-  "name": "ng-dynoform",
+  "name": "ng-reactive-form-builder",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve simple-example",
-    "build": "ng build ng-dynoform && cp README.md ./dist/ng-dynoform",
+    "build": "ng build ng-reactive-form-builder && cp README.md ./dist/ng-reactive-form-builder",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "release": "standard-version",
-    "publish": "npm run build && npm publish --access=public dist/ng-dynoform/"
+    "publish": "npm run build && npm publish --access=public dist/ng-reactive-form-builder/"
   },
   "dependencies": {
     "@angular/animations": "^17.3.0",

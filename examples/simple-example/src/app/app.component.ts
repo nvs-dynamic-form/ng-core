@@ -1,10 +1,10 @@
 import {
   DropdownField,
   TextboxField,
-} from '../../../../projects/ng-dynoform/src/public-api';
+} from '../../../../projects/ng-reactive-form-builder/src/public-api';
 
 import { Component } from '@angular/core';
-import { NgFormBuilderModule } from '../../../../projects/ng-dynoform/src/lib/ng-dynoform.module';
+import { NgFormBuilderModule } from '../../../../projects/ng-reactive-form-builder/src/lib/ng-reactive-form-builder.module';
 import { RouterOutlet } from '@angular/router';
 import { Validators } from '@angular/forms';
 

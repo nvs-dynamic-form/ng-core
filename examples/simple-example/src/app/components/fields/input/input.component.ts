@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
-import { TextboxField } from '../../../../../../../projects/ng-dynoform/src/public-api';
+import { TextboxField } from '../../../../../../../projects/ng-reactive-form-builder/src/public-api';
 
 @Component({
   selector: 'app-input',

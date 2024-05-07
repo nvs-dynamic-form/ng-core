@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ng-dynoform",
+  "dest": "../../dist/ng-reactive-form-builder",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

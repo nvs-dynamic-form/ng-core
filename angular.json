@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-dynoform": {
+    "ng-reactive-form-builder": {
       "projectType": "library",
-      "root": "projects/ng-dynoform",
-      "sourceRoot": "projects/ng-dynoform/src",
+      "root": "projects/ng-reactive-form-builder",
+      "sourceRoot": "projects/ng-reactive-form-builder/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ng-dynoform/ng-package.json"
+            "project": "projects/ng-reactive-form-builder/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng-dynoform/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-reactive-form-builder/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ng-dynoform/tsconfig.lib.json"
+              "tsConfig": "projects/ng-reactive-form-builder/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ng-dynoform/tsconfig.spec.json",
+            "tsConfig": "projects/ng-reactive-form-builder/tsconfig.spec.json",
             "polyfills": ["zone.js", "zone.js/testing"]
           }
         }

@@ -1,5 +1,5 @@
 {
-  "name": "ng-dynoform",
+  "name": "ng-reactive-form-builder",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
@@ -23,12 +23,12 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/ismetkizgin/ng-dynoform/issues"
+    "url": "https://github.com/ismetkizgin/ng-reactive-form-builder/issues"
   },
-  "homepage": "https://github.com/ismetkizgin/ng-dynoform#readme",
+  "homepage": "https://github.com/ismetkizgin/ng-reactive-form-builder#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ismetkizgin/ng-dynoform"
+    "url": "https://github.com/ismetkizgin/ng-reactive-form-builder"
   },
   "contributors": [
     "İsmet Kizgin <info@ismetkizgin.com.tr> (https://github.com/ismetkizgin)"
