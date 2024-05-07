@@ -1,10 +1,10 @@
 import {
   DropdownField,
   TextboxField,
-} from '../../../../projects/ng-dynamic-form/src/public-api';
+} from '../../../../projects/ng-form-builder/src/public-api';
 
 import { Component } from '@angular/core';
-import { NgDynamicFormModule } from '../../../../projects/ng-dynamic-form/src/lib/ng-dynamic-form.module';
+import { NgFormBuilderModule } from '../../../../projects/ng-form-builder/src/lib/ng-form-builder.module';
 import { RouterOutlet } from '@angular/router';
 import { Validators } from '@angular/forms';
 
@@ -13,7 +13,7 @@ import { Validators } from '@angular/forms';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [RouterOutlet, NgDynamicFormModule],
+  imports: [RouterOutlet, NgFormBuilderModule],
 })
 export class AppComponent {
   title = 'simple-example';

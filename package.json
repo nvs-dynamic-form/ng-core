@@ -1,16 +1,15 @@
 {
-  "name": "ng-dynamic-form",
+  "name": "ng-form-builder",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve simple-example",
-    "build": "ng build ng-dynamic-form && cp README.md ./dist/ng-dynamic-form",
+    "build": "ng build ng-form-builder && cp README.md ./dist/ng-form-builder",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "release": "standard-version",
-    "publish": "npm run build && npm publish dist/ng-dynamic-form/"
+    "publish": "npm run build && npm publish dist/ng-form-builder/"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.0",
     "@angular/common": "^17.3.0",

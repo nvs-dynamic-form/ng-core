@@ -1,5 +1,5 @@
 {
-  "name": "ng-dynamic-form",
+  "name": "ng-form-builder",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
@@ -23,12 +23,12 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/ismetkizgin/ng-dynamic-form/issues"
+    "url": "https://github.com/ismetkizgin/ng-form-builder/issues"
   },
-  "homepage": "https://github.com/ismetkizgin/ng-dynamic-form#readme",
+  "homepage": "https://github.com/ismetkizgin/ng-form-builder#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ismetkizgin/ng-dynamic-form"
+    "url": "https://github.com/ismetkizgin/ng-form-builder"
   },
   "contributors": [
     "İsmet Kizgin <info@ismetkizgin.com.tr> (https://github.com/ismetkizgin)"

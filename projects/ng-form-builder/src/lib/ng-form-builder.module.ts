@@ -2,21 +2,21 @@ import { FormFieldComponents, SubmitButton } from './types';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { NgDynamicFormComponent } from './ng-dynamic-form.component';
+import { NgFormBuilderComponent } from './ng-form-builder.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [NgDynamicFormComponent],
+  declarations: [NgFormBuilderComponent],
   imports: [CommonModule, ReactiveFormsModule],
-  exports: [NgDynamicFormComponent],
+  exports: [NgFormBuilderComponent],
 })
-export class NgDynamicFormModule {
+export class NgFormBuilderModule {
   static forRoot(options: {
     submitButton: SubmitButton;
     formFields: FormFieldComponents;
-  }): ModuleWithProviders<NgDynamicFormModule> {
+  }): ModuleWithProviders<NgFormBuilderModule> {
     return {
-      ngModule: NgDynamicFormModule,
+      ngModule: NgFormBuilderModule,
       providers: [
         { provide: FormFieldComponents, useValue: options.formFields },
         { provide: SubmitButton, useValue: options.submitButton },

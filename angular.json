@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-dynamic-form": {
+    "ng-form-builder": {
       "projectType": "library",
-      "root": "projects/ng-dynamic-form",
-      "sourceRoot": "projects/ng-dynamic-form/src",
+      "root": "projects/ng-form-builder",
+      "sourceRoot": "projects/ng-form-builder/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ng-dynamic-form/ng-package.json"
+            "project": "projects/ng-form-builder/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng-dynamic-form/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-form-builder/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ng-dynamic-form/tsconfig.lib.json"
+              "tsConfig": "projects/ng-form-builder/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ng-dynamic-form/tsconfig.spec.json",
+            "tsConfig": "projects/ng-form-builder/tsconfig.spec.json",
             "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
