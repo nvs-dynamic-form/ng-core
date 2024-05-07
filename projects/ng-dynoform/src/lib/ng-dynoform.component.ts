@@ -14,11 +14,11 @@ import { FieldBase } from './types/fields/field-base.type';
 import { FormFieldComponents } from './types/field-components.type';
 
 @Component({
-  selector: 'ng-form-builder',
-  templateUrl: './ng-form-builder.component.html',
-  styleUrls: ['./styles/grid.scss', './ng-form-builder.component.scss'],
+  selector: 'ng-dynoform',
+  templateUrl: './ng-dynoform.component.html',
+  styleUrls: ['./styles/grid.scss', './ng-dynoform.component.scss'],
 })
-export class NgFormBuilderComponent implements OnInit, OnChanges {
+export class NgDynoform implements OnInit, OnChanges {
   protected formGroup!: FormGroup;
   @Input() fromClass?: string = '';
   @Input() validatorOrOpts?: AbstractControlOptions;

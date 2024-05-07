@@ -2,13 +2,13 @@ import { FormFieldComponents, SubmitButton } from './types';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { NgFormBuilderComponent } from './ng-form-builder.component';
+import { NgDynoform } from './ng-dynoform.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [NgFormBuilderComponent],
+  declarations: [NgDynoform],
   imports: [CommonModule, ReactiveFormsModule],
-  exports: [NgFormBuilderComponent],
+  exports: [NgDynoform],
 })
 export class NgFormBuilderModule {
   static forRoot(options: {

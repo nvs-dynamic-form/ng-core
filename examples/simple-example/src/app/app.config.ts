@@ -2,11 +2,11 @@ import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import {
   DropdownField,
   TextboxField,
-} from '../../../../projects/ng-form-builder/src/public-api';
+} from '../../../../projects/ng-dynoform/src/public-api';
 
 import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/fields/input/input.component';
-import { NgFormBuilderModule } from '../../../../projects/ng-form-builder/src/lib/ng-form-builder.module';
+import { NgFormBuilderModule } from '../../../../projects/ng-dynoform/src/lib/ng-dynoform.module';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 

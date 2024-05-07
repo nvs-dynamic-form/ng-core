@@ -10,7 +10,7 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
-      "ng-form-builder": ["./dist/ng-form-builder"]
+      "ng-dynoform": ["./dist/ng-dynoform"]
     },
     "esModuleInterop": true,
     "sourceMap": true,
