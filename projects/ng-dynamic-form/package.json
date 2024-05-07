@@ -19,9 +19,6 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "author": {
-    "name": "İsmet Kizgin"
-  },
   "publishConfig": {
     "access": "public"
   },
@@ -33,6 +30,10 @@
     "type": "git",
     "url": "https://github.com/ismetkizgin/ng-dynamic-form"
   },
+  "contributors": [
+    "İsmet Kizgin <info@ismetkizgin.com.tr> (https://github.com/ismetkizgin)"
+  ],
+  "author": "İsmet Kizgin <info@ismetkizgin.com.tr> (https://github.com/ismetkizgin)",
   "license": "MIT",
   "sideEffects": false
 }
