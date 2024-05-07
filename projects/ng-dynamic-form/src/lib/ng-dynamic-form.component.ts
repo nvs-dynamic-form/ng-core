@@ -88,7 +88,7 @@ export class NgDynamicFormComponent implements OnInit, OnChanges {
   }
 
   loadDefaultValue() {
-    if (!this.submitButtonLabel === undefined)
+    if (this.submitButtonLabel == undefined)
       this.submitButtonLabel = this.submitButton.defaultOptions.label;
 
     if (this.submitButtonIsFullWidth === undefined)

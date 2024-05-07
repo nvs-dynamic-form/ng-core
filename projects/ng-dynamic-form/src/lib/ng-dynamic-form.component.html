@@ -25,7 +25,13 @@
         [class.full]="submitButtonIsFullWidth"
       >
         <ng-container
-          *ngComponentOutlet="submitButton!.component"
+          *ngComponentOutlet="
+            submitButton!.component;
+            inputs: {
+              label: submitButtonLabel,
+              isFullWidth: submitButtonIsFullWidth
+            }
+          "
         ></ng-container>
       </div>
     </div>
