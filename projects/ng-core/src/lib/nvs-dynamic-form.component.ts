@@ -14,14 +14,11 @@ import { FieldBase } from './types/fields/field-base.type';
 import { FormFieldComponents } from './types/field-components.type';
 
 @Component({
-  selector: 'ng-reactive-form-builder',
-  templateUrl: './ng-reactive-form-builder.component.html',
-  styleUrls: [
-    './styles/grid.scss',
-    './ng-reactive-form-builder.component.scss',
-  ],
+  selector: 'nvs-dynamic-form',
+  templateUrl: './nvs-dynamic-form.component.html',
+  styleUrls: ['./styles/grid.scss', './nvs-dynamic-form.component.scss'],
 })
-export class NgReactiveFormBuilder implements OnInit, OnChanges {
+export class NvsDynamicFormComponent implements OnInit, OnChanges {
   protected formGroup!: FormGroup;
   @Input() fromClass?: string = '';
   @Input() validatorOrOpts?: AbstractControlOptions;

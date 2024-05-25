@@ -10,7 +10,7 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
-      "ng-reactive-form-builder": ["./dist/ng-reactive-form-builder"]
+      "nvs-dynamic-form": ["./dist/nvs-dynamic-form"]
     },
     "esModuleInterop": true,
     "sourceMap": true,

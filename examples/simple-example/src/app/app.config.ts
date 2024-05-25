@@ -1,12 +1,9 @@
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
-import {
-  DropdownField,
-  TextboxField,
-} from '../../../../projects/ng-reactive-form-builder/src/public-api';
 
 import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/fields/input/input.component';
-import { NgFormBuilderModule } from '../../../../projects/ng-reactive-form-builder/src/lib/ng-reactive-form-builder.module';
+import { NvsDynamicFormModule } from '../../../../projects/ng-core/src/lib/nvs-dynamic-form.module';
+import { TextboxField } from '../../../../projects/ng-core/src/public-api';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 
@@ -14,7 +11,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     importProvidersFrom(
-      NgFormBuilderModule.forRoot({
+      NvsDynamicFormModule.forRoot({
         formFields: {
           textbox: {
             component: InputComponent,

@@ -1,11 +1,7 @@
-import {
-  DropdownField,
-  TextboxField,
-} from '../../../../projects/ng-reactive-form-builder/src/public-api';
-
 import { Component } from '@angular/core';
-import { NgFormBuilderModule } from '../../../../projects/ng-reactive-form-builder/src/lib/ng-reactive-form-builder.module';
+import { NvsDynamicFormModule } from '../../../../projects/ng-core/src/lib/nvs-dynamic-form.module';
 import { RouterOutlet } from '@angular/router';
+import { TextboxField } from '../../../../projects/ng-core/src/public-api';
 import { Validators } from '@angular/forms';
 
 @Component({
@@ -13,7 +9,7 @@ import { Validators } from '@angular/forms';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [RouterOutlet, NgFormBuilderModule],
+  imports: [RouterOutlet, NvsDynamicFormModule],
 })
 export class AppComponent {
   title = 'simple-example';

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgReactiveFormBuilder } from './ng-reactive-form-builder.component';
+import { NvsDynamicForm } from './nvs-dynamic-form.component';
 
-describe('NgReactiveFormBuilder', () => {
-  let component: NgReactiveFormBuilder;
-  let fixture: ComponentFixture<NgReactiveFormBuilder>;
+describe('NvsDynamicForm', () => {
+  let component: NvsDynamicForm;
+  let fixture: ComponentFixture<NvsDynamicForm>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NgReactiveFormBuilder],
+      imports: [NvsDynamicForm],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(NgReactiveFormBuilder);
+    fixture = TestBed.createComponent(NvsDynamicForm);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

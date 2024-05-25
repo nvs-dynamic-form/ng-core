@@ -1,5 +1,5 @@
 {
-  "name": "ng-reactive-form-builder",
+  "name": "nvs-dynamic-form",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
@@ -23,12 +23,12 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/ismetkizgin/ng-reactive-form-builder/issues"
+    "url": "https://github.com/ismetkizgin/nvs-dynamic-form/issues"
   },
-  "homepage": "https://github.com/ismetkizgin/ng-reactive-form-builder#readme",
+  "homepage": "https://github.com/ismetkizgin/nvs-dynamic-form#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ismetkizgin/ng-reactive-form-builder"
+    "url": "https://github.com/ismetkizgin/nvs-dynamic-form"
   },
   "contributors": [
     "İsmet Kizgin <info@ismetkizgin.com.tr> (https://github.com/ismetkizgin)"

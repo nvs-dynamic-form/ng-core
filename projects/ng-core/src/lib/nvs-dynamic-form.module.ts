@@ -2,21 +2,21 @@ import { FormFieldComponents, SubmitButton } from './types';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { NgReactiveFormBuilder } from './ng-reactive-form-builder.component';
+import { NvsDynamicFormComponent } from './nvs-dynamic-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [NgReactiveFormBuilder],
+  declarations: [NvsDynamicFormComponent],
   imports: [CommonModule, ReactiveFormsModule],
-  exports: [NgReactiveFormBuilder],
+  exports: [NvsDynamicFormComponent],
 })
-export class NgFormBuilderModule {
+export class NvsDynamicFormModule {
   static forRoot(options: {
     submitButton: SubmitButton;
     formFields: FormFieldComponents;
-  }): ModuleWithProviders<NgFormBuilderModule> {
+  }): ModuleWithProviders<NvsDynamicFormModule> {
     return {
-      ngModule: NgFormBuilderModule,
+      ngModule: NvsDynamicFormModule,
       providers: [
         { provide: FormFieldComponents, useValue: options.formFields },
         { provide: SubmitButton, useValue: options.submitButton },
