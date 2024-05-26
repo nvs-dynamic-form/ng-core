@@ -38,7 +38,7 @@ Let's create the component that will work in harmony with the model created. The
 import { Component, Input } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
-import { TextboxField } from '../../../../../../../projects/ng-core/src/public-api';
+import { TextboxField } from './textbox-field.type.ts';
 
 @Component({
   selector: 'app-textbox',
