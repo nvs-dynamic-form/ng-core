@@ -1,27 +1,38 @@
-# NvsDynamicForm
+<h1  align="center">Novatorsoft Dynamic Form - NG Core</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+<p align="center">The NG Core package was developed by the Novatorsoft team to facilitate the use of forms in Angular technology.</p>
+<p align="center">
+<a href="https://www.npmjs.com/package/@nvs-dynmic-form/ng-core" target="_blank"><img src="https://img.shields.io/npm/v/@nvs-dynmic-form/ng-core.svg" alt="NPM Version" /></a> <a href="https://www.npmjs.com/@nvs-dynmic-form/ng-core" target="_blank"><img src="https://img.shields.io/npm/l/@nvs-dynmic-form/ng-core.svg" alt="Package License" /></a> <a href="https://www.npmjs.com/@brewww/authentication-service" target="_blank"><img src="https://img.shields.io/npm/dm/@nvs-dynmic-form/ng-core.svg" alt="NPM Downloads" /></a>
+</p>
 
-## Development server
+## Purpose
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Easy to Use and Fast Development:** The dynamic forms package offers developers the possibility to speed up and streamline the form creation process. Forms can be created with JSON configurations, minimizing the need to write code.
+- **Flexibility and Customization:** With different form elements and validation rules, customizable forms can be created according to the needs of users. In this way, general and custom solutions can be produced that can be used in different projects.
+- **Ease of Maintenance and Updating:** Since form structures are managed from a central location, updates and changes to forms can be applied more easily. This speeds up maintenance processes and minimizes errors.
+- **Reusability:** The package provides reusable components, allowing the same form structures to be reused in different projects or application modules. This both shortens the development process and increases consistency.
 
-## Code scaffolding
+## Which Version to use?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Angular Version | Ng Core Version                 |
+| --------------- | ------------------------------- |
+| Angular >= 17   | `@nvs-dynamic-form/ng-core@1.x` |
+  
+## Documents
 
-## Build
+- [Local Development Instructions](https://github.com/nvs-dynamic-form/ng-core/blob/master/docs/local_development.md)
+  - [Run Example Project](https://github.com/nvs-dynamic-form/ng-core/blob/master/docs/local_development.md#run-example-project)
+  - [Build](https://github.com/nvs-dynamic-form/ng-core/blob/master/docs/local_development.md#build)
+- [Form Field Identification](https://github.com/nvs-dynamic-form/ng-core/blob/master/docs/form-field-identification.md)
+  - [Basic Field Component](https://github.com/nvs-dynamic-form/ng-core/blob/master/docs/form-field-identification.md#basic-field-component)
+- [NVS Dynamic Form - Ng Core Installation](https://github.com/nvs-dynamic-form/ng-core/blob/master/docs/installation.md)
+- [NVS Dynamic Form - Ng Core Usage](https://github.com/nvs-dynamic-form/ng-core/blob/master/docs/usage.md)
+  - [Simple Example](https://github.com/nvs-dynamic-form/ng-core/blob/master/docs/usage.md#simple-example)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Conclusion
 
-## Running unit tests
+These instructions will help you to start, configure, test and use the **Novatorsoft Dynamic Form - NG Core project**. The project can be used in any angular project.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Novatorsoft Dynamic Form - Ng Core is [MIT licensed](LICENSE).
