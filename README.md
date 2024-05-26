@@ -2,7 +2,7 @@
 
 <p align="center">The NG Core package was developed by the Novatorsoft team to facilitate the use of forms in Angular technology.</p>
 <p align="center">
-<a href="https://www.npmjs.com/package/@nvs-dynmic-form/ng-core" target="_blank"><img src="https://img.shields.io/npm/v/@nvs-dynmic-form/ng-core.svg" alt="NPM Version" /></a> <a href="https://www.npmjs.com/@nvs-dynmic-form/ng-core" target="_blank"><img src="https://img.shields.io/npm/l/@nvs-dynmic-form/ng-core.svg" alt="Package License" /></a> <a href="https://www.npmjs.com/@brewww/authentication-service" target="_blank"><img src="https://img.shields.io/npm/dm/@nvs-dynmic-form/ng-core.svg" alt="NPM Downloads" /></a>
+<a href="https://www.npmjs.com/package/@nvs-dynamic-form/ng-core" target="_blank"><img src="https://img.shields.io/npm/v/@nvs-dynamic-form/ng-core.svg" alt="NPM Version" /></a> <a href="https://www.npmjs.com/@nvs-dynamic-form/ng-core" target="_blank"><img src="https://img.shields.io/npm/l/@nvs-dynamic-form/ng-core.svg" alt="Package License" /></a> <a href="https://www.npmjs.com/@brewww/authentication-service" target="_blank"><img src="https://img.shields.io/npm/dm/@nvs-dynamic-form/ng-core.svg" alt="NPM Downloads" /></a>
 </p>
 
 ## Purpose
