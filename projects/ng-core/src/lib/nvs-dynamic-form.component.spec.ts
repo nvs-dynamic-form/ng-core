@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NvsDynamicForm } from './nvs-dynamic-form.component';
+import { NvsDynamicFormComponent } from './nvs-dynamic-form.component';
 
 describe('NvsDynamicForm', () => {
-  let component: NvsDynamicForm;
-  let fixture: ComponentFixture<NvsDynamicForm>;
+  let component: NvsDynamicFormComponent;
+  let fixture: ComponentFixture<NvsDynamicFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NvsDynamicForm],
+      imports: [NvsDynamicFormComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(NvsDynamicForm);
+    fixture = TestBed.createComponent(NvsDynamicFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
