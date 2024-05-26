@@ -1,6 +1,6 @@
 {
   "name": "@nvs-dynamic-form/ng-core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve simple-example",

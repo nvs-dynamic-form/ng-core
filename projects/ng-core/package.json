@@ -1,6 +1,6 @@
 {
   "name": "@nvs-dynamic-form/ng-core",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0",
