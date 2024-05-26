@@ -1,6 +1,6 @@
 {
-  "name": "nvs-dynamic-form",
-  "version": "0.0.1",
+  "name": "@nvs-dynamic-form/ng-core",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0",
@@ -23,12 +23,12 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/ismetkizgin/nvs-dynamic-form/issues"
+    "url": "https://github.com/@nvs-dynamic-form/ng-core/issues"
   },
-  "homepage": "https://github.com/ismetkizgin/nvs-dynamic-form#readme",
+  "homepage": "https://github.com/@nvs-dynamic-form/ng-core#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ismetkizgin/nvs-dynamic-form"
+    "url": "https://github.com/@nvs-dynamic-form/ng-core"
   },
   "contributors": [
     "İsmet Kizgin <info@ismetkizgin.com.tr> (https://github.com/ismetkizgin)"
