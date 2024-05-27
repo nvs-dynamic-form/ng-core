@@ -1,7 +1,7 @@
 import { FieldBase } from './field-base.type';
 
 export class ChipsField extends FieldBase<Array<string>> {
-  override readonly controlType?: 'chips' = 'chips';
+  override readonly controlType = 'chips';
   chipsItems?: Array<string>;
   selectedChipsItems?: Array<string>;
   onlyDefaultTags?: boolean;

@@ -1,7 +1,8 @@
 import { FieldBase } from './field-base.type';
 
 export class DropdownField<ValueType> extends FieldBase<ValueType> {
-  override readonly controlType?: 'dropdown' = 'dropdown';
+  override readonly controlType = 'dropdown';
+  placeholder?: string;
   options?: Array<{
     label: string;
     value: ValueType;
@@ -12,7 +13,8 @@ export class DropdownField<ValueType> extends FieldBase<ValueType> {
     | ((event: Event) => Promise<void>);
 
   constructor(options: DropdownField<ValueType>) {
-    super(options, undefined);
+    super(options);
     this.options = options.options ?? [];
+    this.placeholder = options.placeholder ?? '';
   }
 }
