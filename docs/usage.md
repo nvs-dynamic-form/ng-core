@@ -58,8 +58,9 @@ export class AppComponent {
     }),
   ];
 
-  onSubmit(value: any) {
-    alert(JSON.stringify(value));
+  onSubmit({values, valid}) {
+    if(valid)
+      alert(JSON.stringify(values));
   }
 }
 ```

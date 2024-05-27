@@ -1,5 +1,11 @@
 import { AbstractControlOptions, FormControl, FormGroup } from '@angular/forms';
-import { ChipsField, IScreenSize, ScreenSizeType, SubmitButton } from './types';
+import {
+  ChipsField,
+  IScreenSize,
+  ScreenSizeType,
+  SubmitButton,
+  SubmitResponse,
+} from './types';
 import {
   Component,
   EventEmitter,
@@ -27,7 +33,7 @@ export class NvsDynamicFormComponent implements OnInit, OnChanges {
   @Input() submitButtonIsFullWidth?: boolean;
   @Input() submitButtonPosition?: 'left' | 'right' | 'center';
 
-  @Output() onSubmit: EventEmitter<any> = new EventEmitter();
+  @Output() onSubmit: EventEmitter<SubmitResponse> = new EventEmitter();
   @Input({ required: true }) fields!: Array<FieldBase<any>>;
 
   constructor(
@@ -57,11 +63,12 @@ export class NvsDynamicFormComponent implements OnInit, OnChanges {
   }
 
   protected onSubmitForm(): void {
-    if (!this.formGroup.valid) throw new Error('invalid');
-
     this.onSubmit.emit({
-      ...this.formGroup.value,
-      ...this.getChipsValues(),
+      values: {
+        ...this.formGroup.value,
+        ...this.getChipsValues(),
+      },
+      valid: this.formGroup.valid,
     });
   }
 

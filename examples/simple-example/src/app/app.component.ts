@@ -45,7 +45,8 @@ export class AppComponent {
     visible: true,
   };
 
-  onSubmit(value: any) {
-    alert(JSON.stringify(value));
+  onSubmit({ values, valid }: { values: any; valid: boolean }) {
+    if (valid) alert(JSON.stringify(values));
+    else alert('invalid form');
   }
 }
