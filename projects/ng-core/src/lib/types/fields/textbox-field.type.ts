@@ -2,7 +2,7 @@ import { TemplateRef } from '@angular/core';
 import { FieldBase } from './field-base.type';
 
 export class TextboxField extends FieldBase<string> {
-  override readonly controlType = 'textbox';
+  override readonly fieldType? = 'textbox';
   icon?: TemplateRef<any>;
   onIconClick?: (value?: string) => void;
   type?: 'email' | 'number' | 'password' | 'tel' | 'text' | 'url';

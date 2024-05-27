@@ -1,7 +1,7 @@
 import { FieldBase } from './field-base.type';
 
 export class TextareaField extends FieldBase<string> {
-  override readonly controlType = 'textarea';
+  override readonly fieldType? = 'textarea';
   minRowSize?: number;
   placeholder?: string;
   maxRowSize?: number;

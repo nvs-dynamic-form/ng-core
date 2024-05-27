@@ -8,7 +8,7 @@
       <div [class]="this.createFieldItemClass(field.screenSize!)">
         <ng-container
           *ngComponentOutlet="
-            formFieldComponents[field.controlType!].component;
+            formFieldComponents[field.fieldType!].component;
             inputs: {
               fieldOptions: field,
               formControl: formGroup.controls[field.key]

@@ -17,7 +17,7 @@ import { TemplateRef } from '@angular/core';
 import { FieldBase } from '@nvs-dynamic-form/ng-core';
 
 export class TextboxField extends FieldBase<string> {
-  override readonly controlType?: 'textbox' = 'textbox';
+  override readonly fieldType? = 'textbox';
   type?: 'email' | 'number' | 'password' | 'tel' | 'text' | 'url';
 
   constructor(options: TextboxField) {

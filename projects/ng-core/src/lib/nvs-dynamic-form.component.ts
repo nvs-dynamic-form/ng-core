@@ -54,7 +54,7 @@ export class NvsDynamicFormComponent implements OnInit, OnChanges {
   private getChipsValues(): { [key: string]: Array<string> } {
     return (
       this.fields.filter(
-        (field) => field.controlType === 'chips',
+        (field) => field.fieldType === 'chips',
       ) as Array<ChipsField>
     ).reduce((acc: { [key: string]: Array<string> }, field: ChipsField) => {
       acc[field.key] = field.selectedChipsItems ?? [];

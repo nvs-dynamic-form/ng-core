@@ -6,7 +6,7 @@ export abstract class FieldBase<ValueType> {
   key: string;
   label: string;
   defaultValue?: ValueType;
-  controlType?: string;
+  fieldType?: string;
   screenSize?: ScreenSizeType | IScreenSize;
   customErrorMessages?: Array<{ key: string; message: string }>;
   validators?: Array<ValidatorFn>;

@@ -1,7 +1,7 @@
 import { FieldBase } from './field-base.type';
 
 export class DropdownField<ValueType> extends FieldBase<ValueType> {
-  override readonly controlType = 'dropdown';
+  override readonly fieldType? = 'dropdown';
   placeholder?: string;
   options?: Array<{
     label: string;

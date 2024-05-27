@@ -1,7 +1,7 @@
 import { FieldBase } from './field-base.type';
 
 export class CheckboxField extends FieldBase<boolean> {
-  override readonly controlType = 'checkbox';
+  override readonly fieldType? = 'checkbox';
 
   constructor(options: CheckboxField) {
     super(options);
