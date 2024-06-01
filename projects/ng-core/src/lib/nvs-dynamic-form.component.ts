@@ -84,7 +84,7 @@ export class NvsDynamicFormComponent implements OnInit, OnChanges {
   protected createFieldItemClass(
     screenSize: ScreenSizeType | IScreenSize,
   ): Array<string> {
-    const className: Array<string> = ['df__item'];
+    const className: Array<string> = [];
     if (typeof screenSize == 'number') className.push('df-col-' + screenSize);
     else {
       className.push('df-col-' + screenSize?.desktop);

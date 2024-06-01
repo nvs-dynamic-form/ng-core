@@ -19,10 +19,13 @@
     }
   </div>
   @if (submitButtonVisible) {
-    <div class="df-row">
+    <div [class]="['df-row', 'df-flex-' + submitButtonPosition]">
       <div
-        [class]="['df-col-12', 'df__button', submitButtonPosition]"
-        [class.full]="submitButtonIsFullWidth"
+        [class]="{
+          df__button: true,
+          full: submitButtonIsFullWidth,
+          'df-col-12': submitButtonIsFullWidth
+        }"
       >
         <ng-container
           *ngComponentOutlet="

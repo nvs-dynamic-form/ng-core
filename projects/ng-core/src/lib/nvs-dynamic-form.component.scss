@@ -1,15 +1,8 @@
 :host ::ng-deep {
   .df {
-    &__item {
-      > :first-child {
-        width: 100%;
-        display: inline-flex;
-      }
-    }
-
     &__button {
       > :first-child {
-        width: 250px;
+        width: auto;
       }
 
       &.full {
@@ -23,19 +16,8 @@
 
 .df {
   &__button {
-    display: flex;
+    display: inline-flex;
     margin-top: 8px;
-
-    &.left {
-      justify-content: start;
-    }
-
-    &.right {
-      justify-content: end;
-    }
-
-    &.center {
-      justify-content: center;
-    }
+    padding: 0 4px;
   }
 }

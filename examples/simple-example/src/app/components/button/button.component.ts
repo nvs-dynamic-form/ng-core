@@ -9,5 +9,4 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input({ required: true }) label!: string;
-  @Input({ required: true }) isFullWidth!: boolean;
 }

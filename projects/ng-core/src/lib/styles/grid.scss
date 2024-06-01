@@ -44,3 +44,15 @@
 @include mobile() {
   @include generate-cols("df-col-m");
 }
+
+.df-flex-left {
+  justify-content: flex-start;
+}
+
+.df-flex-right {
+  justify-content: flex-end;
+}
+
+.df-flex-center {
+  justify-content: center;
+}
