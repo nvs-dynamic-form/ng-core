@@ -18,7 +18,7 @@
       </div>
     }
   </div>
-  @if (submitButtonVisible) {
+  @if (!submitButtonVisible) {
     <div [class]="['df-row', 'df-flex-' + submitButtonPosition]">
       <div
         [class]="{

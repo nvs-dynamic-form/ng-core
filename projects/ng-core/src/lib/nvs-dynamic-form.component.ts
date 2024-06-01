@@ -30,7 +30,7 @@ export class NvsDynamicFormComponent implements OnInit, OnChanges {
   @Input() validatorOrOpts?: AbstractControlOptions;
   @Input() submitButtonVisible?: boolean;
   @Input() submitButtonLabel?: string;
-  @Input() submitButtonIsFullWidth?: boolean;
+  @Input() submitButtonIsFullWidth?: boolean = true;
   @Input() submitButtonPosition?: 'left' | 'right' | 'center';
 
   @Output() onSubmit: EventEmitter<SubmitResponse> = new EventEmitter();
@@ -104,9 +104,6 @@ export class NvsDynamicFormComponent implements OnInit, OnChanges {
 
     if (this.submitButtonPosition === undefined)
       this.submitButtonPosition = this.submitButton.defaultOptions.position;
-
-    if (this.submitButtonVisible === undefined)
-      this.submitButtonVisible = this.submitButton.defaultOptions.visible;
   }
 
   ngOnInit(): void {

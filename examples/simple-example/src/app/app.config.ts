@@ -24,7 +24,6 @@ export const appConfig: ApplicationConfig = {
             label: 'Save',
             isFullWidth: true,
             position: 'center',
-            visible: true,
           },
         },
       }),
