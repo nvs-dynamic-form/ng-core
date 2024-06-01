@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/nvs-dynamic-form/ng-core/compare/v1.0.3...v1.1.0) (2024-06-01)
+
+
+### Features
+
+* add valid property in submit response ([7321b6b](https://github.com/nvs-dynamic-form/ng-core/commit/7321b6b20aef313ee2cafaa9b38997de54d8f7bc))
+
 ### [1.0.3](https://github.com/nvs-dynamic-form/ng-core/compare/v1.0.2...v1.0.3) (2024-05-26)
 
 ### [1.0.2](https://github.com/nvs-dynamic-form/ng-core/compare/v1.0.1...v1.0.2) (2024-05-26)
