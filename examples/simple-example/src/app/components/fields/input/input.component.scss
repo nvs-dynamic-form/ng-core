@@ -1,9 +1,6 @@
 .input-component {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 8px);
-
   > input {
     width: 100%;
+    box-sizing: border-box;
   }
 }
