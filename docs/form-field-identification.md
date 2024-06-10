@@ -55,8 +55,9 @@ export class TextboxComponent {
 It is necessary to make sure that the input has full width in the created design. The responsive feature provided by the package is provided in this way.
 
 ```html
-<div class="textbox-component">
+<div>
   <input
+    class="textbox-component"
     [formControl]="formControl"
     [type]="fieldOptions.type"
     [id]="fieldOptions.key"
@@ -71,14 +72,9 @@ It is necessary to make sure that the input has full width in the created design
 </div>
 ```
 
-```scss
+```css
 .textbox-component {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 8px);
-
-  > input {
-    width: 100%;
-  }
+  width: 100%;
+  box-sizing: border-box;
 }
 ```
