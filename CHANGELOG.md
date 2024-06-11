@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/nvs-dynamic-form/ng-core/compare/v1.1.1...v1.2.0) (2024-06-11)
+
+
+### Features
+
+* setup nvs-flexgrid package ([5c1cc5c](https://github.com/nvs-dynamic-form/ng-core/commit/5c1cc5c9f675870dca17d774df7e632e86338912))
+
 ### [1.1.1](https://github.com/nvs-dynamic-form/ng-core/compare/v1.1.0...v1.1.1) (2024-06-01)
 
 ## [1.1.0](https://github.com/nvs-dynamic-form/ng-core/compare/v1.0.3...v1.1.0) (2024-06-01)
