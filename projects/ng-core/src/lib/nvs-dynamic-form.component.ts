@@ -22,7 +22,10 @@ import { FormFieldComponents } from './types/field-components.type';
 @Component({
   selector: 'nvs-dynamic-form',
   templateUrl: './nvs-dynamic-form.component.html',
-  styleUrls: ['./styles/grid.scss', './nvs-dynamic-form.component.scss'],
+  styleUrls: [
+    '../../../../node_modules/nvs-flexgrid/src/main.scss',
+    './nvs-dynamic-form.component.scss',
+  ],
 })
 export class NvsDynamicFormComponent implements OnInit, OnChanges {
   protected formGroup!: FormGroup;
@@ -30,7 +33,7 @@ export class NvsDynamicFormComponent implements OnInit, OnChanges {
   @Input() validatorOrOpts?: AbstractControlOptions;
   @Input() submitButtonVisible?: boolean;
   @Input() submitButtonLabel?: string;
-  @Input() submitButtonIsFullWidth?: boolean = true;
+  @Input() submitButtonIsFullWidth?: boolean;
   @Input() submitButtonPosition?: 'left' | 'right' | 'center';
 
   @Output() onSubmit: EventEmitter<SubmitResponse> = new EventEmitter();
@@ -85,11 +88,11 @@ export class NvsDynamicFormComponent implements OnInit, OnChanges {
     screenSize: ScreenSizeType | IScreenSize,
   ): Array<string> {
     const className: Array<string> = [];
-    if (typeof screenSize == 'number') className.push('df-col-' + screenSize);
+    if (typeof screenSize == 'number') className.push('nvs-col-' + screenSize);
     else {
-      className.push('df-col-' + screenSize?.desktop);
-      if (screenSize?.tablet) className.push('df-col-t-' + screenSize.tablet);
-      if (screenSize?.mobile) className.push('df-col-m-' + screenSize.mobile);
+      className.push('nvs-col-md-' + screenSize?.desktop);
+      if (screenSize?.tablet) className.push('nvs-col-sm-' + screenSize.tablet);
+      if (screenSize?.mobile) className.push('nvs-col-xs-' + screenSize.mobile);
     }
     return className;
   }
@@ -113,5 +116,14 @@ export class NvsDynamicFormComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['fields'] && this.formGroup?.controls) this.onChangesField();
+  }
+
+  getButtonPositionClass(position: 'left' | 'right' | 'center') {
+    const classes = {
+      left: 'nvs-jc-start',
+      right: 'nvs-jc-end',
+      center: 'nvs-jc-center',
+    };
+    return classes[position];
   }
 }

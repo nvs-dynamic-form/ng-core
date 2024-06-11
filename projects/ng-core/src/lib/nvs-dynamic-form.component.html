@@ -1,9 +1,9 @@
 <form
   [formGroup]="formGroup"
-  [class]="['df-container-fluid', fromClass]"
+  [class]="['nvs-container-fluid', fromClass]"
   (ngSubmit)="onSubmitForm()"
 >
-  <div class="df-row">
+  <div class="nvs-row">
     @for (field of fields; track field.key) {
       <div [class]="this.createFieldItemClass(field.screenSize!)">
         <ng-container
@@ -19,12 +19,12 @@
     }
   </div>
   @if (!submitButtonVisible) {
-    <div [class]="['df-row', 'df-flex-' + submitButtonPosition]">
+    <div [class]="['nvs-row', getButtonPositionClass(submitButtonPosition!)]">
       <div
         [class]="{
           df__button: true,
           full: submitButtonIsFullWidth,
-          'df-col-12': submitButtonIsFullWidth
+          'nvs-col-12': submitButtonIsFullWidth
         }"
       >
         <ng-container
